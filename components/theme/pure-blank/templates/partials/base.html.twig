@@ -14,13 +14,11 @@
 {% endblock head %}
 
 {% block stylesheets %}
-    {% do assets.addCss('https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css', 100) %}
-    {% do assets.addCss('https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/grids-responsive-min.css', 99) %}
-    {% do assets.addCss('theme://css/custom.css', 98) %}
+    {% do assets.addCss('theme://css/custom.min.css', 100) %}
 {% endblock %}
 
 {% block javascripts %}
-    {% do assets.addJs('jquery', 100) %}
+    {% do assets.addJs('theme://js/site.min.js', 100) %}
 {% endblock %}
 
 {% block assets deferred %}
